@@ -1,80 +1,160 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0"
+    />
+    <title>BonÁrea</title>
+    <link rel="stylesheet" href="styles.css">   
+   </head>
+   <body>
+   <header>
+       <div class="container-hero">
+       <div class="container hero">
+           <div class="customer-support">
+           <i class="fa-solid fa-headset"></i>
+           <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+           </div>
+           </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+           <div class="container-logo">
+            <i class="fa-solid fa-feather"></i>
+               <h1 class="logo"><a href="/">BonÁrea</a></h1>
+           </div>
 
-<body>
-
-    <header class="header">
-
-        <img class="bg" src="images/bg.png" alt="">
-        <div class="menu container">
-            <a href="#" class="logo">Logo</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a>"</li>
-                    <li><a href="#">Productos</a>"</li>
-                    <li><a href="#">Servicios</a>"</li>
-                    <li><a href="#">Contacto</a>"</li>
-                </ul>
-            </nav>
-            <div>
-                <ul>
-                    <li class="submenu">
-                        <img src="images/car.svg" id="img-carrito" alt="carrito">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
-                        </div>
-                    </li>
-                </ul>
+           <div class="container-user">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="content-shopping-cart">
+                <span class="text">Carrito</span>
+                <span class="number">(0)</span>
             </div>
+           </div>
+           </div>
+       </div>
 
-        </div>"
+       <div class="container-navbar">
+        <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+               <li><a href="#">Inicio</a></li>
+               <li><a href="#">Pollos</a></li>
+               <li><a href="#">Carnes</a></li>
+               <li><a href="#">Embutidos</a></li>
+               <li><a href="#">Más</a></li>
+               <li><a href="#">Blog</a></li>
+            </ul>
+            
+            <form class="search-form">
+                <input type="search" placeholder="Buscar productos..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+       </div>
+   </header>
+   
+   <section class="banner">
+    <div class="content-banner">
+        <p>Bienvenido a BonÁrea, tu tienda de confianza para productos frescos y de calidad.
+            <h2>¡Explora nuestra amplia variedad de productos!
+                <a href="#">Comprar ahora</a>
+    </div>
+   </section>
 
-        <div class="header-container">
-
-            <div class="header-txt">
-                <h1> <span>Bienvenido</span> Disfruta de nuestro Productos</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Totam adipisci provident, incidunt quae
-                    odit minima maxime facere repudiandae cum
-                     similique aliquid quibusdam error, asperiores aperiam quam
-                    ex. Facilis, et vitae.
-                </p>
-                <a href="#" class="btn-1">Informacion</a>
+   <main class="main-content">
+    <section class="container container-features">
+        <div class="card-feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="feature-content">
+                <span>Envío gratuito en todo catalunya</span>
+                <p>En pedido superiore a 50€</p>
             </div>
-            <div class="header-img">
-                <img src="images/pl-1.png" alt="">
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-wallet"></i>
+            <div class="feature-content">
+                <span>Contrareembolso</span>
+                <p>100% garantía de devolución de dinero</p>
             </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-gift"></i>
+            <div class="feature-content">
+                <span>Tarjeta regalo especial</span>
+                <p>Ofrece bonos especiales con regalo</p>
+            </div>
+        </div>
+    <div class="card-feature">
+            <i class="fa-solid fa-headset"></i>
+            <div class="feature-content">
+                <span>Servicio al cliente 24/7</span>
+                <p>LLámanos al 123-456-7890</p>
+            </div>
+        </div>
+    </section>
 
+
+    <section class="container top-categories">
+        <h1 class="heading-1">Categorías Principales</h1>
+        <div class="container-categories">
+            <div class="card-category category-bebidas">
+                <p>Bebidas</p>
+                <span>Ver más</span>
+            </div>
+           <div class="card-category category-jamones">
+                <p>Jamones</p>
+                <span>Ver más</span>
+            </div>
+            <div class="card-category category-frutas">
+                <p>Frutas</p>
+                <span>Ver más</span>
+            </div> 
         </div>
 
-    </header>
-    <script src="script.js"></script>
+        <section class="container top-products">
+            <h1 class="heading-1">Productos Destacados</h1>
 
+            <div class="container-options">
+                <span class="active">Destacados</span>
+                <span>Más vendidos</span>
+                <span>Ofertas</span>
+            </div>
 
-</body>
+            <div class="container-products">
+                <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/product-1.jpg" alt="Producto 1" />
+                         <span class="discount">-13%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+   </main>
 
+<script 
+src="https://kit.fontawesome.com/81581fb069.js"
+crossorigin="anonymous"
+></script>
+   </body>
 </html>
