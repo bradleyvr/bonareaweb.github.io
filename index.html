@@ -1,352 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --primary-color: #11cc0a;
-    --background-color: #f9f5f0;
-    --dark-color: #151515;
-}
-
-html {
-   font-size: 62.5%;
-   font-family: 'Poppins', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-.container {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-
-
-
-.container-hero {
-    background-color: var(--background-color);
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.customer-support{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.customer-support i{
-    font-size: 3.3rem;
-}
-
-.content-customer-support {
-    display: flex;
-    flex-direction: column;
-}
-
-.container.logo {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.container-logo i{
-    font-size: 3rem;
-}
-.container-logo h1 a {
-    text-decoration: none;
-        color: #000;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-
-.container-user {
-    display: flex;
-    gap: 1rem;
-    cursor: pointer;
-}
-
-.container-user .fa-user{
-    font-size: 3rem;
-    color: var(--primary-color);
-    padding-right: 2.5rem;
-    border-right: 1px solid #e2e2e2;
-
-}
-
-.container-user .fa-basket-shopping{
-    font-size: 3rem;
-    color: var(--primary-color);
-    padding-left: 1rem;
-}
-
-
-.content-shopping-cart {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.container-navbar {
-    background-color: var(--primary-color);
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.navbar .fa-bars{
-    display: none;
-}
-
-.menu {
-    display: flex;
-    gap: 2rem;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: var(--dark-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.menu a::after {
-    content: '';
-    width: 1.5rem;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0;
-    transition: all .3s ease;
-}
-
-.menu a:hover::after {
-    opacity: 1;
-}
-
-.menu a:hover{
-    color: #fff
-}
-
-.search-form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 2px solid #fff;
-    border-radius: 2rem;
-    background-color: #fff;
-    height: 4.4rem;
-    overflow: hidden;
-}
-
-.search-form input {
-    outline: none;
-    font-family: inherit;
-    border: none;
-    width: 25rem;
-    font-size: 1.4rem;
-    padding: 0 2rem;
-    color: #777;
-    cursor: pointer
-}
-
-.search-form input: ::-webkit-search-cancel-button{
-    appearance: none;
-}
-
-.search-form .btn-search {
-    border: none;
-    background-color: var(--primary-color);
-    display: flex;
-    allign-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 1rem;
-}
-
-.btn-search i{
-    font-size: 2rem;
-    color: #fff;
-}
-
-
-.banner {
-    background-image: linear-gradient(100deg, #000000, #00000020),url('img/fondo-bonArea.jpg');
-    height: 60rem;
-    background-size: cover;
-    background-position: center;
-}
-
-.content-banner {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 25rem 0;
-}
-
-.content-banner p{
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.content-banner h2{
-    color: #fff;
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.content-banner a{
-    margin-top: 2rem;
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--primary-color);
-    display: inline-block;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-}
-
-/* COMENTARIO */
-
-
-.main-content {
-    background-color: var(--background-color);  
-}
-
-/* COMENTARIO */
-
-
-.container-features {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    padding: 3rem 0;
-}
-
-.card-feature{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 1.5rem;
-}
-
-.card-feature i{
-    font-size: 2.7rem;
-    color: var(--primary-color);
-
-}
-
-.feature-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.feature-content span{
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--dark-color);
-}
-
-.feature-content p{
-    color: #777;
-    font-weight: 500;
-}
-
-/* CATEGORIAS */
-
-
-
-.top-categories{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.container-categories{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-}
-
-.card-category {
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2rem;
-    gap: 2rem;
-}
-
-.category-bebidas {
-    background-image: linear-gradient(#00000080,#00000080), url('img/bebida.png');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.category-jamones{
-    background-image: linear-gradient(#00000080,#00000080), url('img/jamones.jpg');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.category-frutas{
-    background-image: linear-gradient(#00000080,#00000080), url('img/frutas.jpg');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.card-category p{
-    font-size: 2.5rem;
-    color:#fff
-    text-transform: capitalize;
-    position: relative;
-}
-
-
-
-.card-category span{
-    font-size: 1.6rem;
-    color: #fff;
-    position: pointer                                                                                                                           ;
-}
-
-.card-category span:hover{
-    color: var(--primary-color)
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0"
+    />
+    <title>BonÁrea</title>
+    <link rel="stylesheet" href="styles.css">   
+   </head>
+   <body>
+   <header>
+       <div class="container-hero">
+       <div class="container hero">
+           <div class="customer-support">
+           <i class="fa-solid fa-headset"></i>
+           <div class="content-customer-support">
+            <span class="text">Soporte al cliente</span>
+            <span class="number">123-456-7890</span>
+           </div>
+           </div>
+
+           <div class="container-logo">
+            <i class="fa-solid fa-feather"></i>
+               <h1 class="logo"><a href="/">BonÁrea</a></h1>
+           </div>
+
+           <div class="container-user">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="content-shopping-cart">
+                <span class="text">Carrito</span>
+                <span class="number">(0)</span>
+            </div>
+           </div>
+           </div>
+       </div>
+
+       <div class="container-navbar">
+        <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+               <li><a href="#">Inicio</a></li>
+               <li><a href="#">Pollos</a></li>
+               <li><a href="#">Carnes</a></li>
+               <li><a href="#">Embutidos</a></li>
+               <li><a href="#">Más</a></li>
+               <li><a href="#">Blog</a></li>
+            </ul>
+            
+            <form class="search-form">
+                <input type="search" placeholder="Buscar productos..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+       </div>
+   </header>
+   
+   <section class="banner">
+    <div class="content-banner">
+        <p>Bienvenido a BonÁrea, tu tienda de confianza para productos frescos y de calidad.
+            <h2>¡Explora nuestra amplia variedad de productos!
+                <a href="#">Comprar ahora</a>
+    </div>
+   </section>
+
+   <main class="main-content">
+    <section class="container container-features">
+        <div class="card-feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="feature-content">
+                <span>Envío gratuito en todo catalunya</span>
+                <p>En pedido superiore a 50€</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-wallet"></i>
+            <div class="feature-content">
+                <span>Contrareembolso</span>
+                <p>100% garantía de devolución de dinero</p>
+            </div>
+        </div>
+        <div class="card-feature">
+            <i class="fa-solid fa-gift"></i>
+            <div class="feature-content">
+                <span>Tarjeta regalo especial</span>
+                <p>Ofrece bonos especiales con regalo</p>
+            </div>
+        </div>
+    <div class="card-feature">
+            <i class="fa-solid fa-headset"></i>
+            <div class="feature-content">
+                <span>Servicio al cliente 24/7</span>
+                <p>LLámanos al 123-456-7890</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container top-categories">
+        <h1 class="heading-1">Categorías Principales</h1>
+        <div class="container-categories">
+            <div class="card-category category-bebidas">
+                <p>Bebidas</p>
+                <span>Ver más</span>
+            </div>
+           <div class="card-category category-jamones">
+                <p>Jamones</p>
+                <span>Ver más</span>
+            </div>
+            <div class="card-category category-frutas">
+                <p>Frutas</p>
+                <span>Ver más</span>
+            </div> 
+        </div>
+
+        <section class="container top-products">
+            <h1 class="heading-1">Productos Destacados</h1>
+
+            <div class="container-options">
+                <span class="active">Destacados</span>
+                <span>Más vendidos</span>
+                <span>Ofertas</span>
+            </div>
+
+            <div class="container-products">
+                <!-- Producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/paleta.iberica.png" alt="Producto 1" />
+                         <span class="discount">-13%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Jamon Ibérico</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">75.50€ <span>100.20€</span></p>
+                </div>
+                </div>
+                <!-- Producto 2-->
+                 
+            </div>
+        </section>
+    </section>
+   </main>
+
+<script 
+src="https://kit.fontawesome.com/81581fb069.js"
+crossorigin="anonymous"
+></script>
+   </body>
+</html>
