@@ -1069,3 +1069,38 @@ blogs {
     }
 }               
 
+/* Oculto inicialmente */
+#menuFlotante {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
+}
+
+/* Cuando el mouse está sobre el icono o el menú */
+.fa-bars:hover + #menuFlotante,
+#menuFlotante:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.video-section {
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+}
