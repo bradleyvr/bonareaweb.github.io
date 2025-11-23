@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta 
-    name="viewport" 
-    content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>BonÁrea</title>
-    <link rel="stylesheet" href="styles.css">   
-   </head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome correcto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+   
    <body>
+    
    <header>
        <div class="container-hero">
        <div class="container hero">
@@ -62,11 +66,13 @@
    
    <section class="banner">
     <div class="content-banner">
-        <p>Bienvenido a BonÁrea, tu tienda de confianza para productos frescos y de calidad.
-            <h2>¡Explora nuestra amplia variedad de productos!
-                <a href="#">Comprar ahora</a>
+        <p>Bienvenido a BonÁrea, tu tienda de confianza para productos frescos y de calidad.</p>
+
+        <h2>¡Explora nuestra amplia variedad de productos!</h2>
+
+        <a href="#">Comprar ahora</a>
     </div>
-   </section>
+</section>
 
    <main class="main-content">
     <section class="container container-features">
@@ -221,9 +227,36 @@
                     <span class="add-cart">
                         <i class="fa-solid fa-basket-shopping"></i>
                     </span>
-                    <p class="price">13.95€ <span>12.56€</span></p>
+                    <p class="price">12.56€ <span>13.95€</span></p>
                 </div>
                 </div>
+                <!-- Producto Pollo -->
+<div class="card-product">
+    <div class="container-img">
+        <img src="img/pollo.png" alt="Pollo fresco" />
+        <span class="discount">-10%</span>
+        <div class="button-group">
+            <span><i class="fa-regular fa-eye"></i></span>
+            <span><i class="fa-regular fa-heart"></i></span>
+            <span><i class="fa-solid fa-code-compare"></i></span>
+        </div>
+    </div>
+    <div class="content-card-product">
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h3>Pollo Fresco</h3>
+        <span class="add-cart">
+            <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+        <p class="price">7.99€ <span>9.99€</span></p>
+    </div>
+</div>
+
                 <!-- Producto 4-->
                 <div class="card-product">
                     <div class="container-img">
@@ -260,101 +293,345 @@
         </section>
     </section>
    </main>
-// VIDEO //
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página con video al final</title>
-  <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      padding: 20px;
-      background: #f4f4f4;
-    }
-    video {
-      max-width: 100%;
-      height: auto;
-      border: 3px solid #ccc;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>Bienvenido a mi página</h1>
-    <p>Este es el contenido principal...</p>
-  </main>
 
----<h1>Bienvenido a mi página</h1>-----
+   <section class="gallery">
+    <img 
+    src="img/gallery1.jpg" 
+    alt="Gallery Img1" 
+    class="gallery-img-1"
+
+    ><img 
+    src="img/gallery2.jpg" 
+    alt="Gallery Img2" 
+    class="gallery-img-2"
+
+    ><img 
+    src="img/gallery3.jpg" 
+    alt="Gallery Img3" 
+    class="gallery-img-3"
     
-//COMENTARIO//
-    
-<section class="gallery">
-    <img src="img/gallery1.jpg" alt="Gallery Img1" class="gallery-img-1"><img src="img/gallery1.jpg" alt="Gallery Img2" 
-    class="gallery-img-2"><img src="img/gallery1.jpg" alt="Gallery Img3" class="gallery-img-3"><img src="img/gallery1.jpg" 
-    alt="Gallery Img4" class="gallery-img-4"><img src="img/gallery1.jpg" alt="Gallery Img5" class="gallery-img-5">
+    ><img 
+    src="img/gallery4.jpg" 
+    alt="Gallery Img4" 
+    class="gallery-img-4"
+
+    ><img 
+    src="img/gallery5.jpg" 
+    alt="Gallery Img5" 
+    class="gallery-img-5"
+    >
    </section>
-<script 
-src="https://kit.fontawesome.com/81581fb069.js"
-crossorigin="anonymous"
-></script>
-   </body>
-</html>
+   <section class="container specials">
+    <h1} class="heading-1">Ofertas Especiales</h1>
 
-       <script 
-src="https://kit.fontawesome.com/81581fb069.js"
-crossorigin="anonymous"
-></script>
-   </body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video pantalla completa</title>
-<style>
-.video-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-</style>
-</head>
-<body>
+    <div class="container-products">
+                <!-- Producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/paleta.iberica.png" alt="Producto 1" />
+                         <span class="discount">-20%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Jamon Ibérico</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">109.12€ <span>136.40</span></p>
+                </div>
+                </div>
+                <!-- Producto 2-->
+                 <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/aceinteoliva.png" alt="Producto 1" />
+                         <span class="discount">-15%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Aceite de Oliva</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">19.96€ <span>24.95</span></p>
+                </div>
+                </div>
+                <!-- Producto 3-->
+                 <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/paneton.png" 
+                         alt="paneton" />
+                         <span class="discount">-30%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3> Paneton</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">4.90€ <span>7€</span></p>
+                </div>
+                </div>
+                <!-- Producto 4-->
+                <div class="card-product">
+                    <div class="container-img">
+                         <img src="img/turron.jpg" 
+                         alt="turron" />
+                         <span class="discount">-15%</span>
+                         <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Turron</h3>
+                    <span class="add-cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
+                    <p class="price">4.40€ <span>5.50€</span></p>
+                </div>
+                </div>
+            </div>
 
-<p>Contenido aquí...</p>
-<p>Más contenido...</p>
+   </section>
 
-<div class="video-container">
-  <video autoplay controls>
-    <source src="video/video.mp4" type="video/mp4">
-    <source src="video/video.ogv" type="video/ogg">
-    Tu navegador no soporta este video.
-  </video>
+   <section class="container blogs">
+    <h1 class="heading-1">Últimos Blogs</h1>
+
+    <div class="container-blogs">
+        <div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-1.jpg" alt="Imagen Blog 1" />
+                <div class="button-group-blog">
+                    <span>
+
+                    </span><i class="fa-solid fa-magnifying-glass"></i>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Lorem, ipsum dolor sit</h3>
+                <span>19 de Octure 2025</span>
+                <p>
+                    Texto aquí
+                </p>
+                <div class="btn-read-more">Leer más</div>
+            </div>
+        </div><div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-2.jpg" alt="Imagen Blog 2" />
+                <div class="button-group-blog">
+                    <span>
+
+                    </span><i class="fa-solid fa-magnifying-glass"></i>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Lorem, ipsum dolor sit</h3>
+                <span>19 de Octure 2025</span>
+                <p>
+                    Texto aquí
+                </p>
+                <div class="btn-read-more">Leer más</div>
+            </div>
+        </div><div class="card-blog">
+            <div class="container-img">
+                <img src="img/blog-3.jpg" alt="Imagen Blog 3" />
+                <div class="button-group-blog">
+                    <span>
+
+                    </span><i class="fa-solid fa-magnifying-glass"></i>
+                    <span>
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content-blog">
+                <h3>Lorem, ipsum dolor sit</h3>
+                <span>19 de Octure 2025</span>
+                <p>
+                    Texto aquí
+                </p>
+                <div class="btn-read-more">Leer más</div>
+            </div>  
+        </div>
+    </div>
+ </section>
+</main>
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="tittle-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Carrer de Sants 226, Barcelona, 
+                            08014
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Fax: 123456789</li>
+                        <li>Email: bonarea@support.com</li>
+                    </ul>
+                    <div class="social-incons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                        <span class="x">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="tiitle footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Infoirmación Delivery</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="tiitle footer">Mi cuenta</p>
+
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="tiitle footer">Boletín informativo</p>
+
+                    <div class="content">
+                        <p>
+                            Suscribete a nuestro boletín para recibir las
+                             últimas ofertas y actualizaciones.
+                        </p>
+                        <input type="email" placeholder="Ingresa tu correo electrónico" />
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Desarrollado por Bradley Valdivia &copy; 2025
+                </p>
+                
+                 <img src="img/payment.png" alt="Pagos" />
 </div>
+</footer>
+
+<!-- Menú flotante (hamburguesa visible también en PC) -->
+<div id="menuFlotante" style="
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 9999;
+">
+    <a href="#" style="display:block; padding:8px 0;">Inicio</a>
+    <a href="#" style="display:block; padding:8px 0;">Productos</a>
+    <a href="#" style="display:block; padding:8px 0;">Ofertas</a>
+    <a href="#" style="display:block; padding:8px 0;">Contacto</a>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/J6MD2Y5YcC1sWY5Avzk3l3pNGdisz8Ih3Uczdlz7YTlNxkB4ez74O1ijLJrVNzhP8vP5oPzTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="script.js"></script>
 
 </body>
 </html>
 
-COMENTARIO 1
-2
-3
-4
+
+
+
+
+
+
 
